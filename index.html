@@ -590,7 +590,6 @@ tin.addEventListener('keydown',e=>{
 document.addEventListener('click',e=>{if(!e.target.closest('#tin')&&!e.target.closest('#tdrop'))tdrop.classList.remove('show');});
 
 /* ===== BUSCADOR DE PROVEEDOR ===== */
-const PROV_NAMES = [...new Set(RAW.map(r=>r.proveedor))].filter(n=>n!=='(s/d)');
 const pin=document.getElementById('pin'), pdrop=document.getElementById('pdrop');
 let hlIdx=-1, matches=[];
 
